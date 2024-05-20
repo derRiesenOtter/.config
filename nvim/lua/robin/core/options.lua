@@ -44,3 +44,4 @@ opt.swapfile = false
 -- set spelling language
 opt.spelllang = { "en,de" }
 opt.spell = true
+

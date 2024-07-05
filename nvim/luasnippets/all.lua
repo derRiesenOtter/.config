@@ -20,6 +20,8 @@ return {
       \usepackage{graphicx}
       \usepackage{hyperref}
       \usepackage[font=tiny, labelfont=bf]{caption}
+      \usepackage{listings}
+      % \lstset{language=Python, frame=single, showstringspaces=false}
 
       \setbeamertemplate{footline}[frame number]
       \setbeamertemplate{navigation symbols}{}
@@ -55,6 +57,41 @@ return {
       \end{frame}
       ]],
 			{ i(1), i(2), i(3) }
+		)
+	),
+
+	s(
+		"frame",
+		fmta(
+			[[
+      \begin{frame}
+        \frametitle{<>}
+        <>
+      \end{frame}
+      ]],
+			{ i(1), i(2) }
+		)
+	),
+
+	s(
+		"listing",
+		fmta(
+			[[
+      \begin{lstlisting}
+        <>
+      \end{lstlisting}
+      ]],
+			{ i(1) }
+		)
+	),
+
+	s(
+		"code",
+		fmta(
+			[[
+      \texttt{<>}
+      ]],
+			{ i(1) }
 		)
 	),
 }

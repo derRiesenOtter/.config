@@ -15,22 +15,21 @@ setopt hist_ignore_dups
 setopt hist_verify
 
 eval "$(zoxide init zsh)"
+eval "$(fzf --zsh)"
 
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 bindkey -v
 
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source .nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source .nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source .nix-profile/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 alias l="eza --icons=always -ahl"
 alias cd="z"
 alias lmk="latexmk -pdf"
 
-eval "$(fzf --zsh)"
-
-source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
-
+source .nix-profile/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

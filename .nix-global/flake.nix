@@ -13,6 +13,7 @@
         pandas
         scipy
         matplotlib
+        pylint
       ]);
       
       # R Environment

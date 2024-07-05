@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # history setup
-HISTFILE=$HOME/.zhistory
+HISTFILE=$HOME/.config/.zhistory
 SAVEHIST=100000
 HISTSIZE=99999
 setopt share_history

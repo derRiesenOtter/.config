@@ -63,6 +63,12 @@
         # Python and R Environments
         pythonEnv
         rEnv
+
+        # Greeter
+        fastfetch
+
+        # font
+        meslo-lgs-nf
       ];
     };
   };
